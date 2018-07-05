@@ -1,4 +1,7 @@
 # PFN Internship Coding Tasks
+
+<img src="logo.png" width="500">
+
 This repository contains coding problems used for the screening process in PFN (Preferred Networks) summer internship.
 
 English and Japanese statements are available. The overview of the problems is as follows.
