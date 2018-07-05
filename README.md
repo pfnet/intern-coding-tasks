@@ -1,29 +1,41 @@
-# PFN/PFI internship coding tasks
-This repository contains past problem sets used for Preferred Networks and 
-Preferred Infrastructure internship coding tasks.
-The overview of the problems is as follows.
+# PFN Internship Coding Tasks
+This repository contains coding problems used for the screening process in PFN (Preferred Networks) summer internship.
 
-* 2017(PFN, English/Japanese) : 
-  - Machine learning and mathematics - Reinforcement learning, Cartpole, Cross Entropy Method.
-  - Front-end - Creation of search UI.
-  - Back-end - Implementation of 'ls' command.
-  - Chip 
+English and Japanese statements are available. The overview of the problems is as follows.
 
-* 2016(PFN/PFI, Japanese only) : Unsupervised learning. Auto-encoder and its extension.
+## 2018
+The problem set in 2018 consists of five themes. Applicants needed to choose one of them according to the theme they have chosen.
 
-* 2015(PFN/PFI, Japanese only) : Supervised learning. Data preprocessing, perceptron, ZCA Whitening, and its extension. 
+- **Machine Learning/Mathematics**: You are asked to implement an algorithm of adversarial examples for some neural network model. You need to write a simple report on the performance of the algorithm as well.
+- **Back-end**: You are asked to create a tool that analyzes log files.
+- **Front-end**: You are asked to develop a prototype of an annotation tool for speech videos.
+- **Processor/Compiler**: You are asked to optimize the code of matrix multiplication. Further, you need to design a hardware circuit of matrix multiplication.
+- **Chainer**: You are asked to implement a training code for some model, using Chainer.
 
-* 2014(PFI, Japanese only) : Template matching. 
+## 2017
+The problem set in 2017 consists of four themes.
 
-* 2013(PFI, Japanese only) : Search algorithms on random graphs.
+- **Machine Learning/Mathematics**: Reinforcement learning, Cartpole, Cross Entropy Method.
+- **Back-end**: Implementation of 'ls' command.
+- **Front-end**: Creation of search UI.
+- **Chip**: Hardware circuit design.
 
-* 2012(PFI, Japanese only) : String processing. Generalized word chain game.
+## Old Problems (2011-2016)
+`old` directory contains older problem sets, which were use also in the summer internship screening of PFI (Preferred Infrastructure, Inc.).
+Only Japanese statements are available.
 
-* 2011(PFI, Japanese only) : String processing. Palindrome.
+* 2016(PFN, PFI): Unsupervised learning. Auto-encoder and its extension.
+* 2015(PFN, PFI): Supervised learning. Data preprocessing, perceptron, ZCA Whitening, and its extension.
+* 2014(PFI): Template matching.
+* 2013(PFI): Search algorithm on random graphs.
+* 2012(PFI): String processing. Generalized word chain game.
+* 2011(PFI): String processing. Palindrome.
 
-## Reference for PFN internship
+# Reference for PFN internship
 
- - PFN 2017 Summer Internship Program 
- ([English](https://www.preferred-networks.jp/en/news/internship2017summer_en) / 
+- 2018 Summer Internship Program
+ ([English](https://www.preferred-networks.jp/en/news/internship2018summer) /
+ [Japanese](https://www.preferred-networks.jp/ja/news/internship2018summer_jp))
+- 2017 Summer Internship Program
+ ([English](https://www.preferred-networks.jp/en/news/internship2017summer_en) /
  [Japanese](https://www.preferred-networks.jp/ja/news/internship2017summer_jp))
-  

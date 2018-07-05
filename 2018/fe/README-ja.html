@@ -1,0 +1,105 @@
+<h1 id="preferred-networks-インターン選考2018-コーディング課題-フロントエンド分野">Preferred Networks インターン選考2018 コーディング課題 フロントエンド分野</h1>
+<h2 id="変更履歴">変更履歴</h2>
+<ul>
+<li>2018年5月1日 : 初版</li>
+</ul>
+<h2 id="回答にあたっての注意">回答にあたっての注意</h2>
+<ul>
+<li>サーバサイドはMacOSもしくはLinuxで動作するようにしてください。</li>
+<li>クライアントサイドはHTMLベースで、Google ChromeもしくはFirefoxで動作するようにしてください。</li>
+<li>課題1-3はインターネット上の他のウェブサービスに依存せずに動作するようにしてください。</li>
+<li>課題1-3はライブラリやデータベースなどを自由に使用して頂いて構いません。ただし、それらの導入手順は提出するドキュメントで示してください。</li>
+<li>プログラムの回答には以下のいずれかの言語を利用してください。
+<ul>
+<li>C, C++, Python, PHP, Ruby, Go, Java, JavaScript (AltJSを含む)</li>
+<li>複数の言語を使用しても構いません。</li>
+</ul></li>
+<li>課題には自分だけで取り組んでください。この課題を他の応募者を含めた他人と共有・相談することを禁止します。漏洩の証拠が見つかった場合、その応募者は失格となります。ある応募者が別の応募者に回答をコピーさせた場合、双方の応募者が失格となります。</li>
+<li>想定所要時間は2日です。全課題が解けていなくても提出は可能ですので、学業に支障の無い範囲で取り組んで下さい。</li>
+</ul>
+<h2 id="提出物">提出物</h2>
+<p>以下のものを提出して下さい。</p>
+<ul>
+<li>課題1-3の制作物
+<ul>
+<li>制作物はサーバサイド・クライアントサイドのソースコード以外に、データベースの設定ファイルや事前処理に使ったプログラムのソースコードなども含まれます。</li>
+<li>ライブラリは、導入方法をドキュメントに示せば、含めなくて構いません。</li>
+<li>課題で使う動画データは<strong>含めないでください</strong>。</li>
+</ul></li>
+<li>制作物のビルドに必要な環境・実行手順について記したテキスト</li>
+</ul>
+<h2 id="評価基準">評価基準</h2>
+<p>提出物は以下を満たしていることが望ましいです。(必須では無いので、時間がない場合はこれらを満たしていなくても大丈夫です)</p>
+<ul>
+<li>プログラムを実行して、課題の要求が達成できること。</li>
+<li>プログラムが正しいことを検証する方法が示されていること。</li>
+<li>他人が提出物を見て、追試がしやすい形になっていること。</li>
+<li>プログラムが他人が読んでも理解しやすいものになっていること。</li>
+<li>ドキュメントがわかりやすく記述されていること。</li>
+</ul>
+<p>また、面接当日はデモやコードレビューを実施します。どちらも行える環境を準備してください。</p>
+<h2 id="提出方法">提出方法</h2>
+<p>上記の提出物を単一のパスワード無しzipファイルにまとめ、<a href="https://goo.gl/forms/o1m630NhRzdxss5a2">こちら</a>の専用フォームより応募してください。締切は日本時間2018年5月14日（月）23:59です。</p>
+<h2 id="問い合わせ">問い合わせ</h2>
+<p>問題文に関して質問がある場合は<a href="mailto:intern2018@preferred.jp">intern2018@preferred.jp</a>までご連絡ください。問題文に訂正が行われた場合は応募者全員にアナウンスいたします。なお、アプローチや解法に関する問い合わせにはお答えできません。</p>
+<h2 id="問題文">問題文</h2>
+<p>本課題では、セミナー発表のような動画に対して、発言内容のアノテーション（メタデータ作成）を行うウェブサービスの<strong>プロトタイプ</strong>を作成してもらいます。このプロトタイプでは、外部のクラウドサービスを<strong>使わない</strong>でください。</p>
+<p>指定される要件が満たされていれば、どのようなUIでも構いません。定義されていない挙動は、UXが向上するように実装を行ってください。</p>
+<h3 id="課題1必須">課題1（必須）</h3>
+<p>動画ファイルをサーバサイドにアップロードし、閲覧、削除できるウェブサービスのプロトタイプを作ってください。</p>
+<h4 id="画面イメージ">画面イメージ</h4>
+<p><img src="1.gif" alt="ブラウザから動画をアップロード" /></p>
+<p>要件が満たされていれば、画面が一致する必要は<strong>ありません</strong>。</p>
+<h4 id="要件">要件</h4>
+<ul>
+<li>プロトタイピングであるため、デモの範囲のアクセス数で動作する実装で構いません</li>
+<li>少なくともMP4ファイルの登録、閲覧、削除ができること
+<ul>
+<li>サービス内部の格納形式は問いません</li>
+</ul></li>
+</ul>
+<p>ドラッグアンドドロップによるアップロード、アップロードの進捗表示など、UXの向上は加点項目なので、自由に行ってください。</p>
+<h3 id="課題2必須">課題2（必須）</h3>
+<p>課題1で作ったウェブサービスに、アップロードした動画の発話のアノテーションを行う機能を追加してください。</p>
+<h4 id="画面イメージ-1">画面イメージ</h4>
+<p><img src="2.gif" alt="アノテーション作業" /></p>
+<p>要件が満たされていれば、画面が一致する必要は<strong>ありません</strong>。</p>
+<h4 id="要件-1">要件</h4>
+<ul>
+<li>アノテーションは、発話内容以外に、開始時間、終了時間、種類（通常の発話、有声休止（「えーと」「あのー」など）、ノイズ（拍手、タイムキーパーのベルなど））がつけられること</li>
+<li>アノテーションは編集されるとサーバサイドに保存されること</li>
+<li>これらのアノテーションが後述するJSON形式でダウンロードできること
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1">[</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">  <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="st">&quot;start_time&quot;</span><span class="op">:</span> <span class="fl">1.11</span><span class="op">,</span> <span class="co">// 動画における開始秒数をfloatで取る</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">    <span class="st">&quot;finish_time&quot;</span><span class="op">:</span> <span class="fl">1.23</span><span class="op">,</span> <span class="co">// 動画における終了秒数をfloatで取る</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="st">&quot;category&quot;</span><span class="op">:</span> <span class="st">&quot;pause&quot;</span><span class="op">,</span> <span class="co">// speech, pause, noise のいずれかの値を取る</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">    <span class="st">&quot;content&quot;</span><span class="op">:</span> <span class="st">&quot;えー&quot;</span><span class="op">,</span> <span class="co">// 発話内容</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">  <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="st">&quot;start_time&quot;</span><span class="op">:</span> <span class="fl">1.23</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="st">&quot;finish_time&quot;</span><span class="op">:</span> <span class="fl">3.98</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">    <span class="st">&quot;category&quot;</span><span class="op">:</span> <span class="st">&quot;speech&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">    <span class="st">&quot;content&quot;</span><span class="op">:</span> <span class="st">&quot;それでは発表をはじめます&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14">  <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15">    <span class="st">&quot;start_time&quot;</span><span class="op">:</span> <span class="fl">3.87</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16">    <span class="st">&quot;finish_time&quot;</span><span class="op">:</span> <span class="fl">4.32</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17">    <span class="st">&quot;category&quot;</span><span class="op">:</span> <span class="st">&quot;noise&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-18" data-line-number="18">    <span class="st">&quot;content&quot;</span><span class="op">:</span> <span class="st">&quot;（拍手）&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">    <span class="op">:</span> <span class="co">// 以後繰り返す</span></a>
+<a class="sourceLine" id="cb1-21" data-line-number="21">]</a></code></pre></div></li>
+</ul>
+<p>課題1の動画アップロードからSPAで構成するなど、UXの向上は加点項目なので、自由に行ってください。</p>
+<h3 id="課題3自由課題">課題3（自由課題）</h3>
+<p>課題2までで作ったアノテーション機能のUXがまだ不十分だと仮定します。</p>
+<p>例えば、</p>
+<ul>
+<li>動画をコマ送りや早送りして作業しやすくする</li>
+<li>音声波形を表示して、発話の開始終了時点をわかりやすくする</li>
+<li>複数人での作業で、他の人が作業している区間をわかりやすくする</li>
+</ul>
+<p>などの改善が考えられます。</p>
+<p>ここに書かれた改善に限らず、他の改善を行っても構いません。UXが改善するような実装を少なくとも一つ行い、ドキュメント中でアピールをしてください。</p>
+<p>（課題文ここまで）</p>

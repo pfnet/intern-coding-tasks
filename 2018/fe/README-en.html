@@ -1,0 +1,107 @@
+<h1 id="preferred-networks-intern-screening-2018-coding-task-for-front-end-development">Preferred Networks Intern Screening 2018 Coding Task for Front-end Development</h1>
+<h2 id="changelog">Changelog</h2>
+<ul>
+<li>2018-05-01 : Initial version</li>
+</ul>
+<h2 id="notice">Notice</h2>
+<ul>
+<li><p>The server side code must to be runnable on either MacOS or Linux environment.</p></li>
+<li><p>The client side should be developed with HTML base, and should work at least in Google Chrome or Firefox.</p></li>
+<li><p>For Problem 1-3: It is not allowed to rely on external web services in the Internet.</p></li>
+<li><p>For Problem 1-3: Feel free to use any library and database you want. Note that you need to specify how to set up the environment in the submitted documentation.</p></li>
+<li><p>Please use any of the following programming languages:</p>
+<ul>
+<li>C, C++, Python, PHP, Ruby, Go, Java, JavaScript (including AltJS)</li>
+<li>Selecting multiple languages is allowed.</li>
+</ul></li>
+<li><p>Do not share or discuss any details of this coding task with anyone.</p></li>
+<li><p>Please tackle the task by yourself. Do not share or discuss this coding task with anyone including other applicants. If we find an evidence of leakage, the applicant will be disqualified. If one applicant allows another applicant to copy the answer, both applicants will be disqualified.</p></li>
+<li><p>We expect you to spend up to two days for this task. You can submit your work without solving all of the problems. Please do your best without neglecting your coursework.</p></li>
+</ul>
+<h2 id="things-to-submit">Things to submit</h2>
+<ul>
+<li>Please submit the code for each problem.
+<ul>
+<li>Please include not only the server-side and client-side code but also configuration files and so on.</li>
+<li>It is not necessary to include third-party libraries in the submitted code if the set-up method is specified in the documentation.</li>
+<li>Do not include video data used in the task.</li>
+</ul></li>
+<li>Please include a document that explains how to compile/run your code (such as execution environment, library, and other necessary steps).</li>
+</ul>
+<h2 id="evaluation">Evaluation</h2>
+<p>It is desirable that your submission satisfies the following. (These are not mandatory. Your submission does not need to satisfy all of them if you are too busy.)</p>
+<ul>
+<li>The source code is readable for other programmers.</li>
+<li>There is an appropriate amount of unit tests and/or verification code to ensure the source code is correct.</li>
+<li>It is easy to reproduce the experimental results.</li>
+<li>The submitted report is concise and easy to follow.</li>
+</ul>
+<p>You will have a demonstration and code reviews in the interview, so please prepare for them.</p>
+<h2 id="how-to-submit">How to submit</h2>
+<ul>
+<li>Create a zip archive with all of the submission materials and submit it on <a href="https://goo.gl/forms/o1m630NhRzdxss5a2">this form</a>. Due date is Monday, May 14th, 2018, 23:59 JST.</li>
+</ul>
+<h2 id="inquiry">Inquiry</h2>
+<ul>
+<li>If you have any question on this problem description, please contact us at <a href="mailto:intern2018@preferred.jp">intern2018@preferred.jp</a>. An updated version will be shared with all applicants if any change is made. Note that we cannot comment on the approach or give hints to the solution.</li>
+</ul>
+<h2 id="task-description">Task description</h2>
+<p>In this task, you are asked to develop a <strong>prototype</strong> of a web service for annotating seminar presentation videos together with their audio contents (metadata). Do not use any external cloud services.</p>
+<p>The application can have any kind of UI as long as it satisfies the given requirements. For the rest of undefined behavior, specifications, or UI, please make a resonable choice to maximize the UX yourself.</p>
+<h3 id="problem-1">Problem 1</h3>
+<p>Please create a prototype of a web service where users can upload, view, and delete video files on the server side.</p>
+<h4 id="example-for-reference">Example for reference</h4>
+<p><img src="1.gif" alt="Uploading video from browser" /></p>
+<p>It is <em>not</em> necessary to make a completely identical UI as the above example, as long as the requirements are satisfied.</p>
+<h4 id="requirements">Requirements</h4>
+<ul>
+<li>The implementation can assume that the number of accesses is low since this is a prototype</li>
+<li>It allows at least to upload, view, and delete MP4 files
+<ul>
+<li>It is not specified how to internally store uploaded videos</li>
+</ul></li>
+</ul>
+<p>You are also encouraged to add improvements for better UX such as uploading by drag-and-drop, or a progress bar to show uploading status.</p>
+<h3 id="problem-2">Problem 2</h3>
+<p>On the prototype web service you implemented in Problem 1, please add a feature for annotating the uploaded video with a description of the audio contents such as spoken texts.</p>
+<h4 id="example-for-reference-1">Example for reference</h4>
+<p><img src="2.gif" alt="Annotation workflow" /></p>
+<p>It is <em>not</em> necessary to make a completely same UI as the above example, as long as the requirements are satisfied.</p>
+<h4 id="requirement">Requirement</h4>
+<ul>
+<li>Annotated metadata can be not only spoken text but also start and finish time (in seconds), and category information such as ordinary speech, voiced pause (e.g., &quot;Ah&quot;, &quot;You know&quot;), and noise (e.g., applause, time-keeping bell)</li>
+<li>The annotation information is stored on the server side</li>
+<li>The annotation information can be downloaded in the following JSON format
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" data-line-number="1">[</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">  <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="st">&quot;start_time&quot;</span><span class="op">:</span> <span class="fl">1.11</span><span class="op">,</span> <span class="co">// Elapsed seconds (in float)</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">    <span class="st">&quot;finish_time&quot;</span><span class="op">:</span> <span class="fl">1.23</span><span class="op">,</span> <span class="co">// Elapsed seconds (in float)</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="st">&quot;category&quot;</span><span class="op">:</span> <span class="st">&quot;pause&quot;</span><span class="op">,</span> <span class="co">// Either one of speech, pause, or noise</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">    <span class="st">&quot;content&quot;</span><span class="op">:</span> <span class="st">&quot;Ah&quot;</span><span class="op">,</span> <span class="co">// Spoken text</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">  <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">    <span class="st">&quot;start_time&quot;</span><span class="op">:</span> <span class="fl">1.23</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="st">&quot;finish_time&quot;</span><span class="op">:</span> <span class="fl">3.98</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11">    <span class="st">&quot;category&quot;</span><span class="op">:</span> <span class="st">&quot;speech&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">    <span class="st">&quot;content&quot;</span><span class="op">:</span> <span class="st">&quot;Let&#39;s get started.&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14">  <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15">    <span class="st">&quot;start_time&quot;</span><span class="op">:</span> <span class="fl">3.87</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16">    <span class="st">&quot;finish_time&quot;</span><span class="op">:</span> <span class="fl">4.32</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17">    <span class="st">&quot;category&quot;</span><span class="op">:</span> <span class="st">&quot;noise&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-18" data-line-number="18">    <span class="st">&quot;content&quot;</span><span class="op">:</span> <span class="st">&quot;(Applause)&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">    <span class="op">:</span> <span class="co">// Repeat</span></a>
+<a class="sourceLine" id="cb1-21" data-line-number="21">]</a></code></pre></div></li>
+</ul>
+<p>You are also encouraged to add improvements for better UX such as using SPA (Single Page Application), also for the video upload feature in Problem 1.</p>
+<h3 id="problem-3-optional">Problem 3 (Optional)</h3>
+<p>Let's assume that the UX of the annotation features you implemented in Problem 1 and 2 is still not sufficient.</p>
+<p>There can be additional improvements such as:</p>
+<ul>
+<li>Implementing fast-forward and frame-by-frame playback for easier annotation</li>
+<li>Visualizing the waveform of the audio for easier detection of the beginning and end of speech</li>
+<li>Highlighting the time regions that are being edited for concurrent edit by multiple annotators</li>
+</ul>
+<p>Your choice for improvement can be (but is not limited to) the ones listed above. Please implement at least one improvement for better UX, and explain the benefit of the improvements in the document.</p>
+<p>(This is the end of instruction)</p>
