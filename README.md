@@ -31,7 +31,15 @@ Only Japanese statements are available.
 * 2012(PFI): String processing. Generalized word chain game.
 * 2011(PFI): String processing. Palindrome.
 
-# Reference for PFN internship
+# We Are Hiring!
+If you got interested in PFN, we are looking forward to receiving your applications in the following internship programs.
+
+We are also hiring full-time employees in Tokyo, Japan and San Mateo, California. Please refer to the job page below.
+
+* [English job page](https://www.preferred-networks.jp/en/job)
+* [Japanese job page](https://www.preferred-networks.jp/ja/job)
+
+### Reference for PFN internship
 
 - 2018 Summer Internship Program
  ([English](https://www.preferred-networks.jp/en/news/internship2018summer) /
