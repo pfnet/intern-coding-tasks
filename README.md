@@ -6,8 +6,8 @@ This repository contains coding problems used for the screening process in PFN (
 
 English and Japanese statements are available. The overview of the problems is as follows.
 
-## 2021-2024
-The problems in 2021-2024 consist of "coding task" and "thematic task".
+## 2021-2025
+The problems in 2021-2025 consist of "coding task" and "thematic task".
 
 ## 2020
 The problem in 2020 consists of "coding task" and "survey task".
@@ -61,6 +61,9 @@ We are also hiring full-time employees. Please refer to the job page below.
 
 ### Reference for PFN internship
 
+- 2025 Summer Internship Program
+ ([English](https://preferred.jp/en/news/internship2025) /
+ [Japanese](https://preferred.jp/ja/news/internship2025))
 - 2024 Summer Internship Program
  ([English](https://preferred.jp/en/news/internship2024/) /
  [Japanese](https://preferred.jp/ja/news/internship2024/))
